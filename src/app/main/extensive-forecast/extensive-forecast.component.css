@@ -1,0 +1,57 @@
+h3{ 
+    font-size: 3rem;
+    padding: 30px 0px 0px 50px;
+    font-family: 'Berkshire';
+}
+.day{
+    background: linear-gradient(to right, #abbaab, #ffffff);
+    font-family: 'Quicksand';
+    width: 150px;
+    border-radius: 15px;
+    min-height: 100px;
+    border: 1px solid rgb(241, 241, 241);
+    margin: 20px;
+}
+
+.weekDay{
+    display: block;
+    height: 25px;
+}
+
+.date {
+    text-align: center;
+    border-radius: 14px 14px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 65px;
+    line-height: 45px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    color: rgb(241, 241, 241)
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 80px;
+}
+
+.temp{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.desc{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+}

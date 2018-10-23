@@ -1,0 +1,21 @@
+    <div class="item" [ngStyle] = 'myStyles()'>
+          <p class="name">{{  city?.city }}</p>
+          <div class="top">
+            <img class='weatherImg' [src] = 'city.weatherIcon'>
+            <p class="temp">
+              <span class='num'>{{  city?.temperature }}&deg;</span>
+              <span id='degrees'>{{ degrees }}</span>
+            </p>
+            <span class="toggle">
+              <button 
+              class="changeBtn" 
+              type='button' 
+              (click)='changeMeasurment()'
+              [@changePosition]='tempName'></button>
+            </span>
+          </div>
+            <p class="desc">{{  city?.description }}</p>
+            <p class="humidity">Humidity {{  city?.humidity }}%</p>
+      <button class='forecastBtn' (click) = 'showExplicitForecast()' [routerLink] = '[city.city]'>Detailed</button>
+      <button class="remove" type='button' (click) = 'onDelete()'>X</button>
+    </div>

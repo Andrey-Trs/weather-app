@@ -1,0 +1,11 @@
+<div class="box" [@showLogo]>
+  <h3 class='logo'>Weather App</h3>
+  <form  class="findCity" #f="ngForm" (ngSubmit)="onFind(f)">
+      <div class="input-group mb-3">
+          <input type="text" name='name' ngModel class="form-control" placeholder="Enter city" aria-label="Enter city" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit" id="button-addon2">Find</button>
+          </div>
+        </div>
+  </form>
+</div>

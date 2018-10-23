@@ -1,0 +1,12 @@
+<main>
+  <app-header></app-header>
+  <div class="cities">
+    <div class="city" *ngFor = 'let city of chosenCity; let i = index'>
+      <app-city-item
+      [i] = 'i'
+      [city] = 'city'
+      [icon] = 'icon'
+      ></app-city-item>
+    </div>
+  </div>
+</main>

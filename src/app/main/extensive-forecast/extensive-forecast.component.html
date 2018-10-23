@@ -1,0 +1,16 @@
+<div class="forecast">
+  <h3>{{ city }}</h3>
+  <div class="days">
+    <div class="day" *ngFor = 'let day of forecast'>
+      <p class="date">
+        <span class='weekDay'>{{ day.weekDay }}</span>
+        <span>{{ day.date | date }}</span>
+      </p>
+      <div class="imgBox">
+        <img src="{{ day.icon }}" class="icon">
+      </div>
+      <p class="temp">{{ day.temperature }} &deg;C</p>
+      <p class="desc">{{ day.desc }}</p>
+    </div>
+  </div>
+</div>
